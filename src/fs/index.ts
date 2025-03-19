@@ -1,7 +1,12 @@
 import { existsSync, mkdirSync } from "node:fs";
 import path, { dirname } from "node:path";
 import { fileURLToPath } from "url";
+import fs from "node:fs";
 import { logError } from "../log";
+
+export function readIfExistsSync(p: string) {
+  return fs.existsSync(p) ? fs.readFileSync(p) : null;
+}
 
 export function checkFileExists(filePath: string) {
   if (!existsSync(filePath)) {
@@ -42,3 +47,7 @@ export function currentFilePath() {
 }
 
 export * from "./files";
+
+export * from "./errors";
+
+export * from "./cmd";

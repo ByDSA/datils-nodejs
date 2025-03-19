@@ -1,5 +1,5 @@
 import { execSync } from "node:child_process";
-import { getSudoStr, SudoParams } from "../../cmd/params";
+import { getSudoStr, SudoParams } from "../../os/cmd/params";
 
 export type Container = string;
 

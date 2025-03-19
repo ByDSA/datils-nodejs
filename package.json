@@ -25,9 +25,14 @@
   },
   "types": "build/index.d.ts",
   "dependencies": {
-    "chalk": "5.4.1",
+    "@jest/globals": "^29.7.0",
+    "chalk": "4.1.2",
     "datils": "github:ByDSA/datils-ts",
-    "dotenv": "16.4.7"
+    "dotenv": "16.4.7",
+    "find-process": "1.4.10"
+  },
+  "peerDependencies": {
+    "jest": "29.7.0"
   },
   "devDependencies": {
     "@types/jest": "29.5.14",
@@ -36,7 +41,6 @@
     "@typescript-eslint/parser": "8.26.1",
     "daproj": "github:ByDSA/daproj",
     "hashids": "2.3.0",
-    "jest": "29.7.0",
     "prettier": "3.5.3",
     "prettier-plugin-packagejson": "2.5.10",
     "prettier-plugin-sort-json": "4.1.1",

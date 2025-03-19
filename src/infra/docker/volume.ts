@@ -1,5 +1,5 @@
 import { execSync } from "node:child_process";
-import { SudoParams } from "../../cmd/params";
+import { SudoParams } from "../../os/cmd/params";
 
 export type Volume = string;
 type DockerVolumeParams = SudoParams & {

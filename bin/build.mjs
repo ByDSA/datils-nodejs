@@ -1,13 +1,8 @@
 #!/usr/bin/env zx
 
-$.verbose = true;
+import { defaultBuild } from "daproj/zx/build.mjs";
 
-const outDir = "build";
-
-await $`rm -rf ${outDir}`;
-await $`tsc -p tsconfig-build.json`;
-await $`cp package.json pnpm-lock.yaml ./${outDir}`;
-
+const { outDir } = await defaultBuild();
 const jsonSubPath = "os/longnames.json";
 
 await $`cp ./src/${jsonSubPath} ${outDir}/${jsonSubPath}`;

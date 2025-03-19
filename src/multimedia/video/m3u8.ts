@@ -1,6 +1,6 @@
 import path from "node:path";
 import { getLastPartOf, removeExtensionOf } from "datils/path";
-import { getAvailableFile } from "../fs";
+import { getAvailableFile } from "../../fs";
 import * as ffmpeg from "./ffmpeg";
 
 type OptsType = { outPath?: string;

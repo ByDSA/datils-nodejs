@@ -1,4 +1,4 @@
-import { Argv } from "../cmd/argv/Argv";
+import { Argv } from "../os/cmd/argv/Argv";
 import { exec as execCmd } from "../os/process";
 import { EnvParam, stringifyEnvObj } from "./env";
 
